@@ -448,6 +448,20 @@
                     </ul> 
                 </div>
                 
+                <div class="follow">
+                    <p class="follow-title">Підпишіться на розсилку</p>
+                    <div class="follow-wrapper">
+                        <form class="follow-form">
+                            <input type="email" name="email-follow" class="email-follow" placeholder="E-mail">
+                        </form>
+                        <button type="submit" class="follow-button">Підписатися
+                            <svg class="follow-button-icon">
+                                <use href="images/icons.svg#icon-follow-button"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                </div>
 
             </div>
             
@@ -463,6 +477,55 @@
                         <use href="images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
+
+                <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+                <form class="contact-form">
+
+                    <label class="contact-form-lable">
+                        Ім'я
+                        <span class="contact-form-input-wrapper">
+                            <input class="contact-form-input" type="text" name="name" required>
+                            <svg class="form-icons">
+                                <use href="images/icons.svg#icon-name-form"></use>
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="contact-form-lable">
+                        Телефон
+                        <span class="contact-form-input-wrapper">
+                            <input class="contact-form-input" type="tel" name="phone" required>
+                            <svg class="form-icons">
+                                <use href="images/icons.svg#icon-phone-form"></use>
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="contact-form-lable">
+                        Пошта
+                        <span class="contact-form-input-wrapper">
+                            <input class="contact-form-input" type="email" name="email" required>
+                            <svg class="form-icons">
+                                <use href="images/icons.svg#icon-email-form"></use>
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="contact-form-lable">
+                        Коментар
+                        <textarea class="contact-form-textarea" name="comment" placeholder="Введіть текст" required></textarea>
+                    </label>
+
+                    <div class="policy">
+                        <input type="checkbox" name="policy" class="policy-checkbox visually-hidden" id="policy-check" required>
+                        <label for="policy-check" class="policy-lable">Погоджуюся з розсилкою та приймаю&nbsp;<a href="" class="policy-lable-link">Умови договору</a></label>
+                    </div>
+
+                    <button type="submit" class="form-submit-button">Відправити</button>
+
+                </form>
+
+
             </div>
         </div>
 
