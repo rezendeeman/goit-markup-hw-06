@@ -307,7 +307,7 @@ footer address{
     padding-left: 16px;
 }
 
-.email-follow:focus:not(:placeholder-shown), .email-follow:focus{
+.email-follow, .email-follow:focus{
     outline: none;
     color: #FFFFFF;
 }
@@ -321,7 +321,7 @@ footer address{
     color: rgba(255, 255, 255, 0.6);
 }
 
-.follow-wrapper{
+.follow-form{
     display: flex;
     margin-top: 20px;
 }
@@ -658,6 +658,12 @@ footer address{
 
 .close-svg {
     fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal:focus .close-svg,
+.close-modal:hover .close-svg {
+    fill: #2196F3;
 }
 
 .modal-bg {
@@ -686,6 +692,7 @@ footer address{
 }
 
 .close-modal {
+    fill: #000000;
     position: absolute;
     width: 30px;
     height: 30px;
@@ -698,7 +705,10 @@ footer address{
     top: 14px;
     right: 14px;
     cursor: pointer;
+
 }
+
+
 
 .modal-bg.is-hidden {
     opacity: 0;
